@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.neusoft.my12306.fragment.UnfinishOrderFragment">
+
+    <RadioGroup
+        android:id="@+id/unfinish_radio_group_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/finish_btn_id2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/orderlist_selector"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="已完成订单"/>
+        <RadioButton
+            android:id="@+id/unfinish_btn_id2"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/orderlist_selector"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="未完成订单"/>
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/unfinish_listview_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#000000"
+        android:dividerHeight="1px"/>
+
+</LinearLayout>
